@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.ddlab.rnd.tornado.eclipse.util.feature_1.0.0.201505242016.jar" id="com.ddlab.rnd.tornado.eclipse.util.feature" version="1.0.0.201505242016">
+      <category name="Deb Eclipse Util"/>
+   </feature>
+   <category-def name="Deb Eclipse Util" label="Deb Eclipse Util"/>
+</site>

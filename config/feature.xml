@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.ddlab.rnd.tornado.eclipse.util.feature"
+      label="Deb Eclipse Util"
+      version="1.0.0.qualifier"
+      provider-name="DDLAB Inc">
+
+   <description url="http://www.example.com/description">
+      * Copy File Path (Windows Style , Multi Selection)
+* Copy File Path (Unix Style , Multi Selection)
+* Copy Files and Folders (Multi Selection)
+* Open in Windows Command Prompt (Multi Selection)
+* Open Command Prompt in Eclipse Console
+* Open in Windows Explorer (Multi Selection)
+* Full Screen
+* Shortcut for Windows Command Prompt from Eclipse console 
+* Send Files to Desktop 
+* Zip files and send to Desktop
+* Capture screenshot and save to Desktop
+* Split Eclipse Text Editor
+* System view and Kill a Process Id 
+* Preferences for Utilities
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      It is a free and open source utility plugin developed by Debadatta
+Mishra.
+You can use it freely at your own risk.
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      It is a free and open source utility plugin developed by Debadatta
+Mishra.
+You can use it freely at your own risk.
+   </license>
+
+   <plugin
+         id="com.ddlab.rnd.tornado.eclipse.util"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
