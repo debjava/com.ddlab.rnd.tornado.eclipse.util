@@ -39,15 +39,19 @@ public class ScreenUtil4 {
 			if (compo1.getChildren()[0].getClass().getName().equals(
 					"org.eclipse.e4.ui.widgets.ImageBasedFrame")) {
 				compo1.setVisible(false);
-				;
 			}
 			// For status Line
 			Composite compo2 = (Composite) children[2];
 			// Still Extra checking
-			if (compo2.getChildren()[0].getClass().getName().equals(
-					"org.eclipse.jface.action.StatusLine")
-					&& statusBarFlag) {
-				compo2.setVisible(false);
+			Control[] ctrls = compo2.getChildren();
+			for( Control ctrl : ctrls ) {
+				if(ctrl.getClass().getName().equals(
+						"org.eclipse.jface.action.StatusLine")
+						&& statusBarFlag) {
+					compo2.setVisible(false);
+					break;
+				}
+					
 			}
 			maxFlag = true;
 			shell.setFullScreen(true);
@@ -73,11 +77,17 @@ public class ScreenUtil4 {
 		}
 		Composite compo2 = (Composite) children[2];
 		// Still Extra checking
-		if (compo2.getChildren()[0].getClass().getName().equals(
-				"org.eclipse.jface.action.StatusLine")) {
-			compo2.setVisible(true);
-			;
+		Control[] ctrls = compo2.getChildren();
+		for( Control ctrl : ctrls ) {
+			if(ctrl.getClass().getName().equals(
+					"org.eclipse.jface.action.StatusLine")
+					) {
+				compo2.setVisible(true);
+				break;
+			}
+				
 		}
+		
 		shell.setFullScreen(false);
 		maxFlag = false;
 	}
